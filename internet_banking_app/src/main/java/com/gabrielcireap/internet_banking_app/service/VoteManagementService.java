@@ -29,11 +29,11 @@ public class VoteManagementService {
 
     @Transactional
     public Vote findByAnswerId(int answerId, int userId) {
-        return repositoryFactory.createVoteRepository().findByAnswerId(answerId, userId).orElseThrow(AnswerNotFoundException::new);
+        return repositoryFactory.createVoteRepository().findByAnswerId(answerId, userId).orElseThrow(VoteNotFoundException::new);
     }
 
     @Transactional
     public Vote findByQuestionId(int questionId, int userId){
-        return repositoryFactory.createVoteRepository().findByQuestionId(questionId, userId).orElseThrow(QuestionNotFoundException::new);
+        return repositoryFactory.createVoteRepository().findByQuestionId(questionId, userId).orElseThrow(VoteNotFoundException::new);
     }
 }

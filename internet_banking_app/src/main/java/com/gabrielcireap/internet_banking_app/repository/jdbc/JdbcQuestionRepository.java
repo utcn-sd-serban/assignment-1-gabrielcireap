@@ -117,8 +117,8 @@ public class JdbcQuestionRepository implements QuestionRepository {
     }
 
     private void update(Question question){
-        template.update("UPDATE user SET user_id = ?, title = ?, text = ?, creation_date = ?, vote_count = ? where id = ?",
-                question.getUser().getId(), question.getTitle(), question.getText(), question.getCreationDate(), question.getVoteCount());
+        template.update("UPDATE question SET user_id = ?, title = ?, text = ?, creation_date = ?, vote_count = ? where id = ?",
+                question.getUser().getId(), question.getTitle(), question.getText(), question.getCreationDate(), question.getVoteCount(), question.getId());
     }
 
     private List<Tag> findTagsById(int questionId){
@@ -126,11 +126,3 @@ public class JdbcQuestionRepository implements QuestionRepository {
                 (resultSet, i) -> new Tag(resultSet.getInt("tag_id"), resultSet.getString("tag_name")), questionId);
     }
 }
-
-/*List<Question> questions =  template.query(
-                "SELECT " +
-            "question.id, user.id as \"user_id\", user.username, user.password, user.email, user.score, user.is_admin, user.is_banned, " +
-            "question.title, question.text, question.creation_date, question.vote_count, tag.id as \"tag_id\", tag.name as \"tag_name\" " +
-            "FROM question JOIN user ON question.user_id = user.id " +
-            "JOIN questiontotags ON question.id = questiontotags.question_id " +
-            "JOIN tag ON tag.id = questiontotags.tag_id WHERE tag_name = ?", new QuestionMapper(), tag);*/

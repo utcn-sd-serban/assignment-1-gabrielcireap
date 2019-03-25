@@ -25,11 +25,12 @@ public class Question {
     private List<Tag> tags;
 
     public Question(int id){
+        this.id = id;
         this.user = null;
         this.title = null;
         this.text = null;
         this.creationDate = null;
-        this.voteCount = null;
+        this.voteCount = 0;
         this.tags = null;
     }
 }

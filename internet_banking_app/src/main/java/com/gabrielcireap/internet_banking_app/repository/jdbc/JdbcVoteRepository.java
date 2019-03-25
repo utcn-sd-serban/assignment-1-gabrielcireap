@@ -74,7 +74,7 @@ public class JdbcVoteRepository implements VoteRepository {
     }
 
     private void update(Vote vote){
-        template.update("UPDATE user SET question_id = ?, answer_id = ?, user_id = ?, is_upvote = ? where id = ?",
+        template.update("UPDATE vote SET question_id = ?, answer_id = ?, user_id = ?, is_upvote = ? where id = ?",
                             vote.getQuestion() != null ? vote.getQuestion().getId() : null,
                             vote.getAnswer() != null ? vote.getAnswer().getId() : null,
                             vote.getUser().getId(), vote.getIs_upvote(), vote.getId());
@@ -86,9 +86,22 @@ public class JdbcVoteRepository implements VoteRepository {
         JdbcUserRepository userRepository = new JdbcUserRepository(template);
 
         vote.setUser(userRepository.findById(vote.getUser().getId()).get());
-        vote.setAnswer(answerRepository.findById(vote.getUser().getId()).get());
-        vote.setQuestion(questionRepository.findById(vote.getUser().getId()).get());
 
+        if(vote.getAnswer() != null){
+            if(answerRepository.findById(vote.getAnswer().getId()).isPresent()){
+                vote.setAnswer(answerRepository.findById(vote.getAnswer().getId()).get());
+            } else {
+                vote.setAnswer(null);
+            }
+        }
+
+        if(vote.getQuestion() != null){
+            if(questionRepository.findById(vote.getQuestion().getId()).isPresent()){
+                vote.setQuestion(questionRepository.findById(vote.getQuestion().getId()).get());
+            } else {
+                vote.setQuestion(null);
+            }
+        }
         return vote;
     }
 }

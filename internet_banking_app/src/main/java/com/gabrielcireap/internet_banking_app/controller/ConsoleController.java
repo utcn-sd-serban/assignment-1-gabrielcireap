@@ -1,7 +1,7 @@
 package com.gabrielcireap.internet_banking_app.controller;
 
 import com.gabrielcireap.internet_banking_app.entity.*;
-import com.gabrielcireap.internet_banking_app.exception.VoteNotFoundException;
+import com.gabrielcireap.internet_banking_app.exception.*;
 import com.gabrielcireap.internet_banking_app.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -38,9 +38,16 @@ public class ConsoleController implements CommandLineRunner {
             String command = scanner.next().trim();
             try{
                 done = handleCommand(command);
-            }catch (RuntimeException e){
-                //System.out.println("Question not found");
-                e.printStackTrace();
+            }catch (UserNotFoundException userNotFoundException){
+                System.out.println("User was not found!");
+            } catch (QuestionNotFoundException questionNotFoundException){
+                System.out.println("Question was not found!");
+            } catch (VoteNotFoundException voteNotFoundException){
+                System.out.println("Vote was not found!");
+            } catch (TagNotFoundException tagNotFoundException){
+                System.out.println("Tag was not found!");
+            } catch (AnswerNotFoundException answerNotFoundException){
+                System.out.println("Answer was not found!");
             }
         }
     }
@@ -498,12 +505,12 @@ public class ConsoleController implements CommandLineRunner {
         if(currentUser == null){
             System.out.println("Please login or register!");
         } else {
-            System.out.println("Enter answer id: ");
+            System.out.println("Enter question id: ");
             int id = scanner.nextInt();
 
             Question question = questionManagementService.findById(id);
             if(question.getUser().equals(currentUser)){
-                System.out.println("You cannot upvote your own answer!");
+                System.out.println("You cannot downvote your own answer!");
             } else {
 
                 try {
