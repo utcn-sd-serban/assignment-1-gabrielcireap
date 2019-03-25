@@ -33,6 +33,12 @@ public class QuestionManagementService {
     }
 
     @Transactional
+    public void remove(int questionId){
+        Question question = repositoryFactory.createQuestionRepository().findById(questionId).orElseThrow(QuestionNotFoundException::new);
+        repositoryFactory.createQuestionRepository().remove(question);
+    }
+
+    @Transactional
     public List<Question> findQuestionByTitle(String text){
         return repositoryFactory.createQuestionRepository().findByTitle(text);
     }

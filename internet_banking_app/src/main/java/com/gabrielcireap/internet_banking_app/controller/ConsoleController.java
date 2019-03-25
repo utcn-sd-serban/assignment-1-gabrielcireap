@@ -66,6 +66,9 @@ public class ConsoleController implements CommandLineRunner {
             case "logout":
                 handleLogout();
                 return false;
+            case "ban":
+                handleBanUser();
+                return false;
             case "ask":
                 handleAskQuestion();
                 return false;
@@ -74,6 +77,12 @@ public class ConsoleController implements CommandLineRunner {
                 return false;
             case "question_id":
                 handleQuestionId();
+                return false;
+            case "delete_question":
+                handleDeleteQuestion();
+                return false;
+            case "edit_question":
+                handleEditQuestion();
                 return false;
             case "search_title":
                 handleSearchQuestionTitle();
@@ -108,7 +117,6 @@ public class ConsoleController implements CommandLineRunner {
             case "downvote_question":
                 handleDownvoteQuestion();
                 return false;
-
             case "exit":
                 return true;
             default:
@@ -158,7 +166,12 @@ public class ConsoleController implements CommandLineRunner {
         String password = scanner.next().trim();
 
         currentUser = userManagementService.getUserByLogin(username, password);
-        System.out.println("Login successful!");
+        if(currentUser.getIs_banned()){
+            System.out.println("This user is banned");
+            currentUser = null;
+        } else {
+            System.out.println("Login successful!");
+        }
     }
 
     private void handleLogout(){
@@ -336,7 +349,7 @@ public class ConsoleController implements CommandLineRunner {
             int id = scanner.nextInt();
 
             Answer answer = answerManagementService.findById(id);
-            if(answer.getUser().equals(currentUser)){
+            if(answer.getUser().equals(currentUser) || currentUser.getIs_admin()){
                 answerManagementService.remove(answer);
                 System.out.println("Answer was deleted!");
             } else {
@@ -354,12 +367,11 @@ public class ConsoleController implements CommandLineRunner {
             scanner.nextLine();
 
             Answer answer = answerManagementService.findById(id);
-            if(answer.getUser().equals(currentUser)){
+            if(answer.getUser().equals(currentUser) || currentUser.getIs_admin()){
                 System.out.println("Enter text: ");
                 String text = scanner.nextLine().trim();
 
                 answer.setText(text);
-                answer.setCreationDate(new Timestamp(System.currentTimeMillis()));
                 answerManagementService.save(answer);
                 System.out.println("Answer was edited!");
             } else {
@@ -537,6 +549,66 @@ public class ConsoleController implements CommandLineRunner {
                     question.getUser().setScore(question.getUser().getScore() - 2);
                     userManagementService.save(question.getUser());
                 }
+            }
+        }
+    }
+
+    private void handleDeleteQuestion(){
+        if(currentUser == null){
+            System.out.println("Please login or register!");
+        } else {
+            System.out.println("Enter question id: ");
+            int id = scanner.nextInt();
+
+            Question question = questionManagementService.findById(id);
+            if(currentUser.getIs_admin()){
+                questionManagementService.remove(question.getId());
+                System.out.println("Question was deleted!");
+            } else {
+                System.out.println("Questions can only be deleted by the administrator!");
+            }
+        }
+    }
+
+    private void handleEditQuestion(){
+        if(currentUser == null){
+            System.out.println("Please login or register!");
+        } else {
+            System.out.println("Enter question id: ");
+            int id = scanner.nextInt();
+            scanner.nextLine();
+
+            Question question = questionManagementService.findById(id);
+            if(currentUser.getIs_admin()){
+                System.out.println("Enter title: ");
+                String title = scanner.nextLine().trim();
+                System.out.println("Enter text: ");
+                String text = scanner.nextLine().trim();
+
+                question.setTitle(title);
+                question.setText(text);
+                questionManagementService.save(question);
+                System.out.println("Question was edited!");
+            } else {
+                System.out.println("Questions can only be edited by the administrator!");
+            }
+        }
+    }
+
+    private void handleBanUser(){
+        if(currentUser == null){
+            System.out.println("Please login or register!");
+        } else {
+            if(currentUser.getIs_admin()){
+                System.out.println("Enter user id: ");
+                int id = scanner.nextInt();
+
+                User user = userManagementService.findById(id);
+
+                user.setIs_banned(true);
+                userManagementService.save(user);
+            } else {
+                System.out.println("Only admins can ban users!");
             }
         }
     }

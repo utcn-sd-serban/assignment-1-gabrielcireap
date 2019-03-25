@@ -41,4 +41,9 @@ public class UserManagementService {
     public User getUserByLogin(String username, String password){
         return repositoryFactory.createUserRepository().findUserByLogin(username, password).orElseThrow(UserNotFoundException::new);
     }
+
+    @Transactional
+    public User findById(int id){
+        return repositoryFactory.createUserRepository().findById(id).orElseThrow(UserNotFoundException::new);
+    }
 }
