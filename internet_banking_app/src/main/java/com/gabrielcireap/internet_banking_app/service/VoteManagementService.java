@@ -6,9 +6,11 @@ import com.gabrielcireap.internet_banking_app.exception.QuestionNotFoundExceptio
 import com.gabrielcireap.internet_banking_app.exception.VoteNotFoundException;
 import com.gabrielcireap.internet_banking_app.repository.RepositoryFactory;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 
+@Service
 @RequiredArgsConstructor
 public class VoteManagementService {
 

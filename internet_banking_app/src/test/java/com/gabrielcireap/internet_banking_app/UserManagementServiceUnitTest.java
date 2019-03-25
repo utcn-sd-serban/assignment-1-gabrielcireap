@@ -34,8 +34,8 @@ public class UserManagementServiceUnitTest {
     public void testGetUserByLogin(){
         RepositoryFactory repositoryFactory = createMockedFactory();
         UserManagementService userManagementService = new UserManagementService(repositoryFactory);
-        Optional<User> user = userManagementService.getUserByLogin("user1", "pass1");
-        Assert.assertEquals(new User(1, "user1", "pass1", "email1", 0, false, false), user.get());
+        User user = userManagementService.getUserByLogin("user1", "pass1");
+        Assert.assertEquals(new User(1, "user1", "pass1", "email1", 0, false, false), user);
     }
 
     @Test
