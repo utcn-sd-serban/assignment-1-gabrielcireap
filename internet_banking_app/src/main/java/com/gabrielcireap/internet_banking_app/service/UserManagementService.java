@@ -35,7 +35,10 @@ public class UserManagementService {
     }
 
     @Transactional
-    public Optional<User> getUserByLogin(String username, String password){
-        return repositoryFactory.createUserRepository().findUserByLogin(username, password);
+    public User save(User user) { return repositoryFactory.createUserRepository().save(user); }
+
+    @Transactional
+    public User getUserByLogin(String username, String password){
+        return repositoryFactory.createUserRepository().findUserByLogin(username, password).orElseThrow(UserNotFoundException::new);
     }
 }

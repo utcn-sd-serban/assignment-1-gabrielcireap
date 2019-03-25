@@ -5,4 +5,5 @@ public interface RepositoryFactory {
     QuestionRepository createQuestionRepository();
     AnswerRepository createAnswerRepository();
     TagRepository createTagRepository();
+    VoteRepository createVoteRepository();
 }

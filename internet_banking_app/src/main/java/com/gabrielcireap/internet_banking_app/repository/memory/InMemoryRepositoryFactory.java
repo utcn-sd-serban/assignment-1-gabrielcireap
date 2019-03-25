@@ -12,6 +12,7 @@ public class InMemoryRepositoryFactory implements RepositoryFactory {
     private final InMemoryQuestionRepository questionRepository = new InMemoryQuestionRepository();
     private final InMemoryUserRepository userRepository = new InMemoryUserRepository();
     private final InMemoryTagRepository tagRepository = new InMemoryTagRepository();
+    private final InMemoryVoteRepository voteRepository = new InMemoryVoteRepository();
 
     @Override
     public UserRepository createUserRepository() {
@@ -30,4 +31,9 @@ public class InMemoryRepositoryFactory implements RepositoryFactory {
 
     @Override
     public TagRepository createTagRepository() { return tagRepository; }
+
+    @Override
+    public VoteRepository createVoteRepository() {
+        return voteRepository;
+    }
 }

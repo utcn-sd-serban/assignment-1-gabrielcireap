@@ -2,6 +2,7 @@ package com.gabrielcireap.internet_banking_app.service;
 
 import com.gabrielcireap.internet_banking_app.entity.Question;
 import com.gabrielcireap.internet_banking_app.entity.Tag;
+import com.gabrielcireap.internet_banking_app.exception.QuestionNotFoundException;
 import com.gabrielcireap.internet_banking_app.repository.RepositoryFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,8 +23,8 @@ public class QuestionManagementService {
     }
 
     @Transactional
-    public Optional<Question> findById(int id){
-        return repositoryFactory.createQuestionRepository().findById(id);
+    public Question findById(int id){
+        return repositoryFactory.createQuestionRepository().findById(id).orElseThrow(QuestionNotFoundException::new);
     }
 
     @Transactional

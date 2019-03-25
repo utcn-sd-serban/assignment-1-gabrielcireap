@@ -2,6 +2,7 @@ package com.gabrielcireap.internet_banking_app.service;
 
 import com.gabrielcireap.internet_banking_app.entity.Answer;
 import com.gabrielcireap.internet_banking_app.entity.Question;
+import com.gabrielcireap.internet_banking_app.exception.AnswerNotFoundException;
 import com.gabrielcireap.internet_banking_app.repository.RepositoryFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,7 @@ public class AnswerManagementService {
     public void remove(Answer answer){ repositoryFactory.createAnswerRepository().remove(answer); }
 
     @Transactional
-    public Optional<Answer> findById(int id){
-        return repositoryFactory.createAnswerRepository().findById(id);
+    public Answer findById(int id){
+        return repositoryFactory.createAnswerRepository().findById(id).orElseThrow(AnswerNotFoundException::new);
     }
 }

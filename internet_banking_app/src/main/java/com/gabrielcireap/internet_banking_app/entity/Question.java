@@ -23,4 +23,13 @@ public class Question {
     private Timestamp creationDate;
     private Integer voteCount;
     private List<Tag> tags;
+
+    public Question(int id){
+        this.user = null;
+        this.title = null;
+        this.text = null;
+        this.creationDate = null;
+        this.voteCount = null;
+        this.tags = null;
+    }
 }

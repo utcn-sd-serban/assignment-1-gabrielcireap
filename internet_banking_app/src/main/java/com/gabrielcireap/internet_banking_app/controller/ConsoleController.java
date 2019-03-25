@@ -1,18 +1,13 @@
 package com.gabrielcireap.internet_banking_app.controller;
 
-import com.gabrielcireap.internet_banking_app.entity.Answer;
-import com.gabrielcireap.internet_banking_app.entity.Question;
-import com.gabrielcireap.internet_banking_app.entity.Tag;
-import com.gabrielcireap.internet_banking_app.entity.User;
-import com.gabrielcireap.internet_banking_app.service.AnswerManagementService;
-import com.gabrielcireap.internet_banking_app.service.QuestionManagementService;
-import com.gabrielcireap.internet_banking_app.service.TagManagementService;
+import com.gabrielcireap.internet_banking_app.entity.*;
+import com.gabrielcireap.internet_banking_app.exception.VoteNotFoundException;
+import com.gabrielcireap.internet_banking_app.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import com.gabrielcireap.internet_banking_app.service.UserManagementService;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -30,6 +25,7 @@ public class ConsoleController implements CommandLineRunner {
     private final QuestionManagementService questionManagementService;
     private final TagManagementService tagManagementService;
     private final AnswerManagementService answerManagementService;
+    private final VoteManagementService voteManagementService;
     private final Scanner scanner = new Scanner(System.in);
     private User currentUser;
 
@@ -93,6 +89,19 @@ public class ConsoleController implements CommandLineRunner {
             case "edit_answer":
                 handleEditAnswer();
                 return false;
+            case "upvote_answer":
+                handleUpvoteAnswer();
+                return false;
+            case "upvote_question":
+                handleUpvoteQuestion();
+                return false;
+            case "downvote_answer":
+                handleDownvoteAnswer();
+                return false;
+            case "downvote_question":
+                handleDownvoteQuestion();
+                return false;
+
             case "exit":
                 return true;
             default:
@@ -141,13 +150,8 @@ public class ConsoleController implements CommandLineRunner {
         System.out.print("Enter password: ");
         String password = scanner.next().trim();
 
-        Optional<User> user = userManagementService.getUserByLogin(username, password);
-        if(user.isPresent()){
-            currentUser = user.get();
-            System.out.println("Login successful!");
-        } else {
-            System.out.println("Error logging in!");
-        }
+        currentUser = userManagementService.getUserByLogin(username, password);
+        System.out.println("Login successful!");
     }
 
     private void handleLogout(){
@@ -196,19 +200,16 @@ public class ConsoleController implements CommandLineRunner {
             scanner.nextLine();
             int id = scanner.nextInt();
 
-            Optional<Question> question = questionManagementService.findById(id);
-            if(question.isPresent()){
-                System.out.println(question);
+            Question question = questionManagementService.findById(id);
+            System.out.println(question);
 
-                List<Answer> answers = answerManagementService.findByQuestion(question.get());
-                if(answers.isEmpty()){
-                    System.out.println("This question has no answers!");
-                } else {
-                    System.out.println("Answers\n");
-                    answers.forEach(answer -> System.out.println(answer));
-                }
+            List<Answer> answers = answerManagementService.findByQuestion(question);
+            answers.sort((a1, a2) -> a1.getVoteCount() >= a2.getVoteCount() ? -1 : 1);
+            if(answers.isEmpty()){
+                System.out.println("This question has no answers!");
             } else {
-                System.out.println("No question with id " + id + " was found!");
+                System.out.println("Answers\n");
+                answers.forEach(answer -> System.out.println(answer));
             }
         }
     }
@@ -268,21 +269,17 @@ public class ConsoleController implements CommandLineRunner {
             int id = scanner.nextInt();
             scanner.nextLine();
 
-            Optional<Question> question = questionManagementService.findById(id);
-            if(question.isPresent()){
+            Question question = questionManagementService.findById(id);
 
-                System.out.println("Enter list of tags (separated by ',': ");
-                String text = scanner.nextLine().trim();
+            System.out.println("Enter list of tags (separated by ',': ");
+            String text = scanner.nextLine().trim();
 
-                //save tags and remove duplicates
-                List<Tag> tag = stringToTags(text);
-                tag.forEach(tagManagementService::save);
-                tag.forEach(tag1 -> questionManagementService.addTag(question.get(), tag1));
-            } else {
-                System.out.println("No question with id " + id + " was found!");
+            //save tags and remove duplicates
+            List<Tag> tag = stringToTags(text);
+            tag.forEach(tagManagementService::save);
+            tag.forEach(tag1 -> questionManagementService.addTag(question, tag1));
             }
         }
-    }
 
     private void handleListTags(){
         if(currentUser == null){
@@ -315,17 +312,12 @@ public class ConsoleController implements CommandLineRunner {
             int id = scanner.nextInt();
             scanner.nextLine();
 
-            Optional<Question> question = questionManagementService.findById(id);
-            if(question.isPresent()){
+            Question question = questionManagementService.findById(id);
 
-                System.out.println("Enter answer text: ");
-                String text = scanner.nextLine().trim();
-                Answer answer = new Answer(null, question.get(), currentUser, text, new Timestamp(System.currentTimeMillis()), 0);
-                answerManagementService.save(answer);
-
-            } else {
-                System.out.println("No question with id " + id + " was found!");
-            }
+            System.out.println("Enter answer text: ");
+            String text = scanner.nextLine().trim();
+            Answer answer = new Answer(null, question, currentUser, text, new Timestamp(System.currentTimeMillis()), 0);
+            answerManagementService.save(answer);
         }
     }
 
@@ -336,16 +328,12 @@ public class ConsoleController implements CommandLineRunner {
             System.out.println("Enter answer id: ");
             int id = scanner.nextInt();
 
-            Optional<Answer> answer = answerManagementService.findById(id);
-            if(answer.isPresent()){
-                if(answer.get().getUser().equals(currentUser)){
-                    answerManagementService.remove(answer.get());
-                    System.out.println("Answer was deleted!");
-                } else {
-                    System.out.println("Answers can only be deleted by their author!");
-                }
+            Answer answer = answerManagementService.findById(id);
+            if(answer.getUser().equals(currentUser)){
+                answerManagementService.remove(answer);
+                System.out.println("Answer was deleted!");
             } else {
-                System.out.println("Could not find answer with given id!");
+                System.out.println("Answers can only be deleted by their author!");
             }
         }
     }
@@ -358,21 +346,190 @@ public class ConsoleController implements CommandLineRunner {
             int id = scanner.nextInt();
             scanner.nextLine();
 
-            Optional<Answer> answer = answerManagementService.findById(id);
-            if(answer.isPresent()){
-                if(answer.get().getUser().equals(currentUser)){
-                    System.out.println("Enter text: ");
-                    String text = scanner.nextLine().trim();
+            Answer answer = answerManagementService.findById(id);
+            if(answer.getUser().equals(currentUser)){
+                System.out.println("Enter text: ");
+                String text = scanner.nextLine().trim();
 
-                    answer.get().setText(text);
-                    answer.get().setCreationDate(new Timestamp(System.currentTimeMillis()));
-                    answerManagementService.save(answer.get());
-                    System.out.println("Answer was edited!");
-                } else {
-                    System.out.println("Answers can only be edited by their author!");
-                }
+                answer.setText(text);
+                answer.setCreationDate(new Timestamp(System.currentTimeMillis()));
+                answerManagementService.save(answer);
+                System.out.println("Answer was edited!");
             } else {
-                System.out.println("Could not find answer with given id!");
+                System.out.println("Answers can only be edited by their author!");
+            }
+        }
+    }
+
+    private void handleUpvoteAnswer(){
+
+        if(currentUser == null){
+            System.out.println("Please login or register!");
+        } else {
+            System.out.println("Enter answer id: ");
+            int id = scanner.nextInt();
+
+            Answer answer = answerManagementService.findById(id);
+            if(answer.getUser().equals(currentUser)){
+                System.out.println("You cannot upvote your own answer!");
+            } else {
+
+                try {
+                    Vote vote = voteManagementService.findByAnswerId(answer.getId(), currentUser.getId());
+                    if(vote.getIs_upvote()){
+                        System.out.println("You can only upvote once!");
+                    } else {
+                        vote.setIs_upvote(true);
+                        voteManagementService.save(vote);
+
+                        answer.setVoteCount(answer.getVoteCount() + 2);
+                        answerManagementService.save(answer);
+
+                        answer.getUser().setScore(answer.getUser().getScore() + 12);
+                        userManagementService.save(answer.getUser());
+
+                        currentUser.setScore(currentUser.getScore() + 1);
+                        userManagementService.save(currentUser);
+                    }
+                } catch(VoteNotFoundException v){
+                    Vote vote = new Vote(null, null, answer, currentUser, true);
+                    voteManagementService.save(vote);
+
+                    answer.setVoteCount(answer.getVoteCount() + 1);
+                    answerManagementService.save(answer);
+
+                    answer.getUser().setScore(answer.getUser().getScore() + 10);
+                    userManagementService.save(answer.getUser());
+                }
+            }
+        }
+    }
+
+    private void handleDownvoteAnswer(){
+
+        if(currentUser == null){
+            System.out.println("Please login or register!");
+        } else {
+            System.out.println("Enter answer id: ");
+            int id = scanner.nextInt();
+
+            Answer answer = answerManagementService.findById(id);
+            if(answer.getUser().equals(currentUser)){
+                System.out.println("You cannot upvote your own answer!");
+            } else {
+
+                try {
+                    Vote vote = voteManagementService.findByAnswerId(answer.getId(), currentUser.getId());
+                    if(!vote.getIs_upvote()){
+                        System.out.println("You can only downvote once!");
+                    } else {
+                        vote.setIs_upvote(false);
+                        voteManagementService.save(vote);
+
+                        answer.setVoteCount(answer.getVoteCount() - 2);
+                        answerManagementService.save(answer);
+
+                        answer.getUser().setScore(answer.getUser().getScore() - 12);
+                        userManagementService.save(answer.getUser());
+
+                        currentUser.setScore(currentUser.getScore() - 1);
+                        userManagementService.save(currentUser);
+                    }
+                } catch(VoteNotFoundException v){
+                    Vote vote = new Vote(null, null, answer, currentUser, false);
+                    voteManagementService.save(vote);
+
+                    answer.setVoteCount(answer.getVoteCount() - 1);
+                    answerManagementService.save(answer);
+
+                    answer.getUser().setScore(answer.getUser().getScore() - 2);
+                    userManagementService.save(answer.getUser());
+
+                    currentUser.setScore(currentUser.getScore() - 1);
+                    userManagementService.save(currentUser);
+                }
+            }
+        }
+    }
+
+    private void handleUpvoteQuestion(){
+
+        if(currentUser == null){
+            System.out.println("Please login or register!");
+        } else {
+            System.out.println("Enter question id: ");
+            int id = scanner.nextInt();
+
+            Question question = questionManagementService.findById(id);
+            if(question.getUser().equals(currentUser)){
+                System.out.println("You cannot upvote your own answer!");
+            } else {
+
+                try {
+                    Vote vote = voteManagementService.findByQuestionId(question.getId(), currentUser.getId());
+                    if(vote.getIs_upvote()){
+                        System.out.println("You can only upvote once!");
+                    } else {
+                        vote.setIs_upvote(true);
+                        voteManagementService.save(vote);
+
+                        question.setVoteCount(question.getVoteCount() + 2);
+                        questionManagementService.save(question);
+
+                        question.getUser().setScore(question.getUser().getScore() + 7);
+                        userManagementService.save(question.getUser());
+                    }
+                } catch(VoteNotFoundException v){
+                    Vote vote = new Vote(null, question, null, currentUser, true);
+                    voteManagementService.save(vote);
+
+                    question.setVoteCount(question.getVoteCount() + 1);
+                    questionManagementService.save(question);
+
+                    question.getUser().setScore(question.getUser().getScore() + 5);
+                    userManagementService.save(question.getUser());
+                }
+            }
+        }
+    }
+
+    private void handleDownvoteQuestion(){
+
+        if(currentUser == null){
+            System.out.println("Please login or register!");
+        } else {
+            System.out.println("Enter answer id: ");
+            int id = scanner.nextInt();
+
+            Question question = questionManagementService.findById(id);
+            if(question.getUser().equals(currentUser)){
+                System.out.println("You cannot upvote your own answer!");
+            } else {
+
+                try {
+                    Vote vote = voteManagementService.findByQuestionId(question.getId(), currentUser.getId());
+                    if(!vote.getIs_upvote()){
+                        System.out.println("You can only downvote once!");
+                    } else {
+                        vote.setIs_upvote(true);
+                        voteManagementService.save(vote);
+
+                        question.setVoteCount(question.getVoteCount() - 2);
+                        questionManagementService.save(question);
+
+                        question.getUser().setScore(question.getUser().getScore() - 7);
+                        userManagementService.save(question.getUser());
+                    }
+                } catch(VoteNotFoundException v){
+                    Vote vote = new Vote(null, question, null, currentUser, false);
+                    voteManagementService.save(vote);
+
+                    question.setVoteCount(question.getVoteCount() - 1);
+                    questionManagementService.save(question);
+
+                    question.getUser().setScore(question.getUser().getScore() - 2);
+                    userManagementService.save(question.getUser());
+                }
             }
         }
     }

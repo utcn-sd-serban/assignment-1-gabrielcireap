@@ -35,6 +35,16 @@ public class User {
         this.is_banned = false;
     }
 
+    public User(int id){
+        this.id = id;
+        this.email = null;
+        this.username = null;
+        this.password = null;
+        this.score = 0;
+        this.is_admin = false;
+        this.is_banned = false;
+    }
+
     @Override
     public String toString(){
         return "User(" + username + ", " + score + ")";
