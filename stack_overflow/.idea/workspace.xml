@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/resources/db/migration/V1__Initial_schema.sql" line="48" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/seed/QuestionSeed.java" line="32" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/service/QuestionManagementService.java" line="64" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="87788990-552f-4af4-ad14-e21c20845f5c" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gabrielcireap/stackOverflow/IntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-342">
+              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/db/migration/V1__Initial_schema.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/StackOverflowApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#346#347#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>remove</find>
+      <find>1</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/exception/VoteYourOwnException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jpa/HibernateRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/entity/Tag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/service/AnswerManagementService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jpa/HibernateUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/service/VoteManagementService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jpa/HibernateVoteRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gabrielcireap/internet_banking_app/TagManagementServiceUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gabrielcireap/internet_banking_app/IntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/entity/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/entity/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/entity/Vote.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/data/DataUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/data/DataVoteRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/data/DataRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/controller/ConsoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jpa/HibernateAnswerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/QuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/data/DataAnswerRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/memory/InMemoryQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jdbc/JdbcQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/data/DataQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/memory/InMemoryTagRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jdbc/JdbcTagRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jpa/HibernateTagRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/TagRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/data/DataTagRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/repository/jpa/HibernateQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/internet_banking_app/service/QuestionManagementService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateQuestionRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gabrielcireap/stackOverflow/InternetBankingAppApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/InternetBankingAppApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gabrielcireap/stackOverflow/TagManagementServiceUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/seed/QuestionSeed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/seed/TagSeed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/seed/UserSeed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/data/DataRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/mapper/AnswerMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcVoteRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/memory/InMemoryRepositoryFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/db.migration/V1__Initial_schema.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/StackOverflowApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gabrielcireap/stackOverflow/StackOverflowApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/db/migration/V1__Initial_schema.sql" />
+        <option value="$PROJECT_DIR$/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gabrielcireap/stackOverflow/IntegrationTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stackOverflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stackOverflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stack_overflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stack_overflow" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="migration" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;h2" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554298669885" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.gabrielcireap.internet_banking_app" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.StackOverflowApplication">
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StackOverflow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gabrielcireap.stackOverflow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gabrielcireap.stackOverflow" />
+      <option name="MAIN_CLASS_NAME" value="com.gabrielcireap.stackOverflow.IntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StackOverflow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gabrielcireap.stackOverflow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gabrielcireap.stackOverflow" />
+      <option name="MAIN_CLASS_NAME" value="com.gabrielcireap.stackOverflow.IntegrationTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TagManagementServiceUnitTest.testListUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StackOverflow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gabrielcireap.stackOverflow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gabrielcireap.stackOverflow" />
+      <option name="MAIN_CLASS_NAME" value="com.gabrielcireap.stackOverflow.TagManagementServiceUnitTest" />
+      <option name="METHOD_NAME" value="testListUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagementServiceUnitTest.testRemoveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StackOverflow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gabrielcireap.stackOverflow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gabrielcireap.stackOverflow" />
+      <option name="MAIN_CLASS_NAME" value="com.gabrielcireap.stackOverflow.UserManagementServiceUnitTest" />
+      <option name="METHOD_NAME" value="testRemoveUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserManagementServiceUnitTest.testRemoveUserError" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StackOverflow" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gabrielcireap.stackOverflow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gabrielcireap.stackOverflow" />
+      <option name="MAIN_CLASS_NAME" value="com.gabrielcireap.stackOverflow.UserManagementServiceUnitTest" />
+      <option name="METHOD_NAME" value="testRemoveUserError" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InternetBankingAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="StackOverflow" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gabrielcireap.stackOverflow.InternetBankingAppApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackOverflowApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="StackOverflow" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gabrielcireap.stackOverflow.StackOverflowApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IntegrationTest.login" />
+        <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="JUnit.UserManagementServiceUnitTest.testRemoveUserError" />
+        <item itemvalue="JUnit.TagManagementServiceUnitTest.testListUsers" />
+        <item itemvalue="JUnit.UserManagementServiceUnitTest.testRemoveUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87788990-552f-4af4-ad14-e21c20845f5c" name="Default Changelist" comment="" />
+      <created>1552903724371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552903724371</updated>
+      <workItem from="1552903727564" duration="25000" />
+      <workItem from="1552903780684" duration="12073000" />
+      <workItem from="1552985047924" duration="7870000" />
+      <workItem from="1553074340552" duration="792000" />
+      <workItem from="1553093997891" duration="3817000" />
+      <workItem from="1553149050716" duration="2092000" />
+      <workItem from="1553158801156" duration="9702000" />
+      <workItem from="1553205688329" duration="10076000" />
+      <workItem from="1553248647576" duration="9221000" />
+      <workItem from="1553330337610" duration="15309000" />
+      <workItem from="1553435373211" duration="1433000" />
+      <workItem from="1553458772979" duration="2274000" />
+      <workItem from="1553461560207" duration="7650000" />
+      <workItem from="1553496484326" duration="6262000" />
+      <workItem from="1553548744653" duration="1426000" />
+      <workItem from="1553550526127" duration="8995000" />
+      <workItem from="1553586647140" duration="2772000" />
+      <workItem from="1553637073356" duration="877000" />
+      <workItem from="1553692338251" duration="12454000" />
+      <workItem from="1553715870056" duration="6504000" />
+      <workItem from="1553724072697" duration="4055000" />
+      <workItem from="1553810742342" duration="8926000" />
+      <workItem from="1553850915080" duration="4905000" />
+      <workItem from="1553856065662" duration="61000" />
+      <workItem from="1554289751926" duration="3562000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="IntegrationTest - 2019.04.03 at 14h 15m 15s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2019.04.03 at 14h 16m 52s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest_login - 2019.04.03 at 14h 19m 09s.xml">
+      <configuration name="IntegrationTest.login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest_login - 2019.04.03 at 14h 23m 00s.xml">
+      <configuration name="IntegrationTest.login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2019.04.03 at 15h 54m 39s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2019.04.03 at 15h 57m 32s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2019.04.03 at 16h 02m 27s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest - 2019.04.03 at 16h 03m 22s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest_login - 2019.04.03 at 16h 05m 55s.xml">
+      <configuration name="IntegrationTest.login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegrationTest_login - 2019.04.03 at 16h 08m 40s.xml">
+      <configuration name="IntegrationTest.login" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="143133000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.30738255" />
+      <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.19597316" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" visible="true" weight="0.47733712" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.45184135" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067115" side_tool="true" weight="0.4305949" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.43411928" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/controller/ConsoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2545">
+          <caret line="212" lean-forward="true" selection-start-line="212" selection-end-line="212" />
+          <folding>
+            <element signature="method#handleCurrentUser#0;class#ConsoleController#0" />
+            <element signature="method#handleRegistration#0;class#ConsoleController#0" />
+            <element signature="method#handleLogin#0;class#ConsoleController#0" />
+            <element signature="method#handleLogout#0;class#ConsoleController#0" />
+            <element signature="method#handleAskQuestion#0;class#ConsoleController#0" />
+            <element signature="method#handleQuestionId#0;class#ConsoleController#0" />
+            <element signature="method#handleSearchQuestionTitle#0;class#ConsoleController#0" />
+            <element signature="method#handleAnswerQuestion#0;class#ConsoleController#0" />
+            <element signature="method#handleDeleteAnswer#0;class#ConsoleController#0" />
+            <element signature="method#handleEditAnswer#0;class#ConsoleController#0" />
+            <element signature="method#handleUpvoteAnswer#0;class#ConsoleController#0" />
+            <element signature="method#handleDownvoteAnswer#0;class#ConsoleController#0" />
+            <element signature="method#handleUpvoteQuestion#0;class#ConsoleController#0" />
+            <element signature="method#handleDownvoteQuestion#0;class#ConsoleController#0" />
+            <element signature="method#handleDeleteQuestion#0;class#ConsoleController#0" />
+            <element signature="method#handleEditQuestion#0;class#ConsoleController#0" />
+            <element signature="method#handleBanUser#0;class#ConsoleController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/seed/TagSeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/seed/QuestionSeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="16" column="87" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/seed/UserSeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/service/AnswerManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#save#1;class#AnswerManagementService#0" />
+            <element signature="method#remove#0;class#AnswerManagementService#0" />
+            <element signature="method#edit#0;class#AnswerManagementService#0" />
+            <element signature="method#findById#0;class#AnswerManagementService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/service/QuestionManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#listQuestions#0;class#QuestionManagementService#0" />
+            <element signature="method#findById#0;class#QuestionManagementService#0" />
+            <element signature="method#save#0;class#QuestionManagementService#0" />
+            <element signature="method#remove#0;class#QuestionManagementService#0" />
+            <element signature="method#edit#0;class#QuestionManagementService#0" />
+            <element signature="method#findQuestionByTitle#0;class#QuestionManagementService#0" />
+            <element signature="method#findQuestionByTag#0;class#QuestionManagementService#0" />
+            <element signature="method#stringToTags#0;class#QuestionManagementService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/service/TagManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#listTags#0;class#TagManagementService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/service/UserManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#remove#0;class#UserManagementService#0" />
+            <element signature="method#save#0;class#UserManagementService#0" />
+            <element signature="method#findById#0;class#UserManagementService#0" />
+            <element signature="method#login#0;class#UserManagementService#0" />
+            <element signature="method#ban#0;class#UserManagementService#0" />
+            <element signature="method#checkIfUserIsLogged#0;class#UserManagementService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/service/VoteManagementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#remove#0;class#VoteManagementService#0" />
+            <element signature="method#findByAnswerId#0;class#VoteManagementService#0" />
+            <element signature="method#findByQuestionId#0;class#VoteManagementService#0" />
+            <element signature="method#upvoteAnswer#0;class#VoteManagementService#0" />
+            <element signature="method#downvoteAnswer#0;class#VoteManagementService#0" />
+            <element signature="method#upvoteQuestion#0;class#VoteManagementService#0" />
+            <element signature="method#downvoteQuestion#0;class#VoteManagementService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/data/DataAnswerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/data/DataQuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/data/DataRepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="85" lean-forward="true" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/data/DataTagRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/data/DataUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findUserByLogin#0;class#DataUserRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/data/DataVoteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findByAnswerId#0;class#DataVoteRepository#0" />
+            <element signature="method#findByQuestionId#0;class#DataVoteRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/mapper/AnswerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/mapper/QuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/mapper/VoteMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcAnswerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="method#save#0;class#JdbcAnswerRepository#0" />
+            <element signature="method#findById#0;class#JdbcAnswerRepository#0" />
+            <element signature="method#findByQuestion#0;class#JdbcAnswerRepository#0" />
+            <element signature="method#insert#0;class#JdbcAnswerRepository#0" />
+            <element signature="method#update#0;class#JdbcAnswerRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcQuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findAll#0;class#JdbcQuestionRepository#0" />
+            <element signature="method#save#0;class#JdbcQuestionRepository#0" />
+            <element signature="method#findById#0;class#JdbcQuestionRepository#0" />
+            <element signature="method#findByTitle#0;class#JdbcQuestionRepository#0" />
+            <element signature="method#findByTag#0;class#JdbcQuestionRepository#0" />
+            <element signature="method#insert#0;class#JdbcQuestionRepository#0" />
+            <element signature="method#insert#1;class#JdbcQuestionRepository#0" />
+            <element signature="method#update#0;class#JdbcQuestionRepository#0" />
+            <element signature="method#findTagsById#0;class#JdbcQuestionRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcRepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcTagRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="method#findAll#0;class#JdbcTagRepository#0" />
+            <element signature="method#save#0;class#JdbcTagRepository#0" />
+            <element signature="method#findById#0;class#JdbcTagRepository#0" />
+            <element signature="method#insert#0;class#JdbcTagRepository#0" />
+            <element signature="method#findByName#0;class#JdbcTagRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#save#0;class#JdbcUserRepository#0" />
+            <element signature="method#findById#0;class#JdbcUserRepository#0" />
+            <element signature="method#findUserByLogin#0;class#JdbcUserRepository#0" />
+            <element signature="method#insert#0;class#JdbcUserRepository#0" />
+            <element signature="method#update#0;class#JdbcUserRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jdbc/JdbcVoteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+          <folding>
+            <element signature="method#save#0;class#JdbcVoteRepository#0" />
+            <element signature="method#findById#0;class#JdbcVoteRepository#0" />
+            <element signature="method#findByAnswerId#0;class#JdbcVoteRepository#0" />
+            <element signature="method#findByQuestionId#0;class#JdbcVoteRepository#0" />
+            <element signature="method#insert#0;class#JdbcVoteRepository#0" />
+            <element signature="method#update#0;class#JdbcVoteRepository#0" />
+            <element signature="method#updateVote#0;class#JdbcVoteRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateAnswerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#save#0;class#HibernateAnswerRepository#0" />
+            <element signature="method#findByQuestion#0;class#HibernateAnswerRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateQuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findAll#0;class#HibernateQuestionRepository#0" />
+            <element signature="method#save#0;class#HibernateQuestionRepository#0" />
+            <element signature="method#findByTitle#0;class#HibernateQuestionRepository#0" />
+            <element signature="method#findByTag#0;class#HibernateQuestionRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateRepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateTagRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findAll#0;class#HibernateTagRepository#0" />
+            <element signature="method#save#0;class#HibernateTagRepository#0" />
+            <element signature="method#findByName#0;class#HibernateTagRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findAll#0;class#HibernateUserRepository#0" />
+            <element signature="method#save#0;class#HibernateUserRepository#0" />
+            <element signature="method#findUserByLogin#0;class#HibernateUserRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/jpa/HibernateVoteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#save#0;class#HibernateVoteRepository#0" />
+            <element signature="method#findByAnswerId#0;class#HibernateVoteRepository#0" />
+            <element signature="method#findByQuestionId#0;class#HibernateVoteRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/memory/InMemoryAnswerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="method#save#0;class#InMemoryAnswerRepository#0" />
+            <element signature="method#findByQuestion#0;class#InMemoryAnswerRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/memory/InMemoryRepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/memory/InMemoryQuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
+          <folding>
+            <element signature="method#save#0;class#InMemoryQuestionRepository#0" />
+            <element signature="method#findByTitle#0;class#InMemoryQuestionRepository#0" />
+            <element signature="method#findByTag#0;class#InMemoryQuestionRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/memory/InMemoryTagRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding>
+            <element signature="method#save#0;class#InMemoryTagRepository#0" />
+            <element signature="method#findByName#0;class#InMemoryTagRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/memory/InMemoryUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="method#save#0;class#InMemoryUserRepository#0" />
+            <element signature="method#findUserByLogin#0;class#InMemoryUserRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/memory/InMemoryVoteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="method#save#0;class#InMemoryVoteRepository#0" />
+            <element signature="method#findByAnswerId#0;class#InMemoryVoteRepository#0" />
+            <element signature="method#findByQuestionId#0;class#InMemoryVoteRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/AnswerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/QuestionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/RepositoryFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/TagRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/repository/VoteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/db.migration/V1__Initial_schema.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gabrielcireap/stackOverflow/StackOverflowApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gabrielcireap/stackOverflow/StackOverflowApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/db/migration/V1__Initial_schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gabrielcireap/stackOverflow/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>StackOverflow</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
